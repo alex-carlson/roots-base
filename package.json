@@ -1,6 +1,6 @@
 {
-  "name": "roots-base",
-  "description": "Clean Roots Install",
+  "name": "1517 Media",
+  "description": "Static Site for 1517 Media",
   "dependencies": {
     "autoprefixer-stylus": "0.5.x",
     "axis": "0.3.x",

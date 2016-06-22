@@ -14,3 +14,9 @@ module.exports =
 
   stylus:
     use: [axis(), rupture(), autoprefixer()]
+
+  'server':
+    clean_urls: true
+
+  locals:
+    title: '1517 Media'

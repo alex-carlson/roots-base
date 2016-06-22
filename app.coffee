@@ -21,3 +21,9 @@ module.exports =
 
   jade:
     pretty: true
+
+  'server':
+    clean_urls: true
+
+  locals:
+    title: '1517 Media'
