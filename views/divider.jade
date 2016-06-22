@@ -1,0 +1,35 @@
+#p5.divider
+script.
+  function setup(){
+    var cnv = createCanvas(windowWidth, 250);
+    cnv.parent("p5");
+    background("#f03");
+    fill(255);
+    textSize(width/8);
+    textFont("Avenir");
+
+    makeType(4);
+
+  }
+
+  function mousePressed(){
+    makeType(4);
+  }
+
+  function makeType(ct){
+    background("#f03");
+    for(i = 0; i < ct; i++){
+      var x = random(0, width);
+      var r = random(0, 360);
+      var letters = ["1", "5", "1", "7"];
+
+      push();
+
+      translate(x, -width/24);
+      rotate(r);
+
+      text(letters[i], 0, 0);
+
+      pop();
+    }
+  }

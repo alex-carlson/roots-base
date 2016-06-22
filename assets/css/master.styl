@@ -5,3 +5,59 @@ base()
 
 body
   padding: 50px
+
+  .black
+    color: black;
+
+  h1, h2, h3, h4, h5, h6
+    margin: 0.33em 0;
+
+  p
+    font-weight: bold;
+    color: black;
+    margin: 1em 3px;
+    float: left;
+
+  a
+    color: brand;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover
+      text-decoration: underline;
+
+  ul
+    list-style-type: none;
+    padding: 0;
+    font-weight: bold;
+    width: 100%;
+    float: left;
+
+    li
+      float: left;
+      padding: 3px 15px;
+
+      &:first-of-type
+        padding-left: 0;
+
+  .divider
+    height: 250px;
+    background: brand;
+    float: left;
+    width: 110%;
+
+  .half
+    width: 43%;
+    padding: 2% 7% 0 0;
+    float: left;
+
+  item
+    float: left;
+    width: 100%;
+
+@media (max-width: 900px)
+  body
+    padding: 15px;
+
+    .half
+      width: 100%;
