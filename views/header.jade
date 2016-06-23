@@ -1,8 +1,8 @@
 h1.logo
-  a(href="/") 1517 <span class="black">Media</span>
+  a(href="/") the <span class="black">name</span>
 ul
   li
-    a(href="/about") About
+    a(href="/about").active About
   li
     a(href="/careers") Careers
   li
@@ -17,6 +17,7 @@ script.
     fill(255);
     textSize(width/8);
     textFont("Avenir");
+    textStyle(BOLD);
 
     makeType(2);
 
@@ -25,16 +26,17 @@ script.
   function makeType(ct){
     background("#f33");
     for(i = 0; i < ct; i++){
-      var x = random(0, width);
-      var r = random(0, 360);
+      var x = random(50, width-50);
+      var r = random(-60, 60);
       var letters = ["1", "5", "1", "7"];
-
+      var rLetter = int(random(0, letters.length));
+      
       push();
 
-      translate(x, -width/24);
+      translate(x, 0);
       rotate(r);
 
-      text(letters[i], 0, 0);
+      text(letters[rLetter], 0, 50);
 
       pop();
     }
