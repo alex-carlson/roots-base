@@ -1,7 +1,7 @@
 extends layout
 
-block head
-  title Careers
+block vars
+  - var pageTitle = 'Careers'
 
 block content
   include header
@@ -14,26 +14,27 @@ block content
     p.
       Our building provides both a fitness center and indoor bicycle storage. And our kitchen is always stocked with plenty of coffee, water, healthy snacks, and fresh fruit.
     p.
-      Our company was named a top place to work by the StarTribune in 2015.<br/><br/><br/><img src="img/star-trib.png"/ >
+      Our company was named a top place to work by the StarTribune in 2015.
       
       
   .half
     p.
       Find out more about why we're such a great place to work:
       
-    h2 Our Culture
+    h2 
+      a(href="/culture") Our Culture
     
     p.
       <br/><br/>
       To learn about current openings at any of our units, click on the appropriate name:
       
     h2
-      a(href="#") Augsburg Fortress
+      a(href="//workforcenow.adp.com/jobs/apply/posting.html?client=augsburg&ccId=161501108_2367&type=MP&lang=en_US", target="_blank") Augsburg Fortress
     h2
-      a(href="#") Fortress Press
+      a(href="//workforcenow.adp.com/jobs/apply/posting.html?client=augsburg&ccId=161501108_2353&type=MP&lang=en_US", target="_blank") Fortress Press
     h2
-      a(href="#") Sparkhouse
+      a(href="//workforcenow.adp.com/jobs/apply/posting.html?client=augsburg&ccId=161501108_2375&type=MP&lang=en_US", target="_blank") Sparkhouse
     h2
-      a(href="#") 1517 Media
+      a(href="//1517.media", target="_blank") 1517 Media
 
   include footer

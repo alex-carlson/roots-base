@@ -1,43 +1,31 @@
-h1.logo
-  a(href="/") 1517 <span class="black">Media</span>
+.logo
+  a(href="/")
+    include logo.html
+  
+block vars
 ul
   li
-    a(href="/about").active About
+    if pageTitle === "About"
+      a(href="/about").about.active About
+    else
+      a(href="/about").about About
   li
-    a(href="/careers") Careers
+    if pageTitle === "Careers"
+      a(href="/careers").careers.active Careers
+    else
+      a(href="/careers").careers Careers
   li
-    a(href="/contact") Contact
+    if pageTitle === "Contact"
+      a(href="/contact").contact.active Contact
+    else
+      a(href="/contact").contact Contact
 
 #p5.divider
-script.
-  function setup(){
-    var cnv = createCanvas(windowWidth, 250);
-    cnv.parent("p5");
-    background("#f33");
-    fill(255);
-    textSize(width/8);
-    textFont("Avenir");
-    textStyle(BOLD);
-
-    makeType(2);
-
-  }
-
-  function makeType(ct){
-    background("#f33");
-    for(i = 0; i < ct; i++){
-      var x = random(50, width-50);
-      var r = random(-60, 60);
-      var letters = ["1", "5", "1", "7"];
-      var rLetter = int(random(0, letters.length));
-      
-      push();
-
-      translate(x, 0);
-      rotate(r);
-
-      text(letters[rLetter], 0, 50);
-
-      pop();
-    }
-  }
+  if pageTitle === "Home"
+      img(src="")
+   else if pageTitle === "About"
+     img(src="img/image1.jpeg")
+    else if pageTitle === "Careers"
+      img(src="img/image_2.jpeg")
+    else if pageTitle === "Contact"
+      img(src="img/image3.jpeg")

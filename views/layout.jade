@@ -7,11 +7,12 @@ html
     meta(name='author', content= "author of the site")
     //- uncomment if your site is responsive!
     meta(name="viewport" content="width=device-width, initial-scale=1")
-    link(rel='shortcut icon', href='img/favicon.ico', type='image/x-icon') 
+    link(rel='shortcut icon', href='img/favicon.png', type='image/x-icon') 
     script(src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.2/p5.min.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.2/addons/p5.dom.min.js')
+    block vars
+    title 1517 Media | #{pageTitle}
     != css()
-    block head
 
   body
     block content

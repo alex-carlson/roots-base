@@ -1,7 +1,7 @@
 extends layout
 
-block head
-  title 1517 Media
+block vars
+  - var pageTitle = 'Home'
 
 block content
 
@@ -10,26 +10,28 @@ block content
   section
     .half
       p.
-        Welcome to 1517 Media. We’re dedicated to developing substantive and innovative resources that support the life and ministries of the church, enrich the communities these ministries serve, and proclaim the liberating grace of God. 
+        Welcome to 1517 Media. We are dedicated to developing innovative and substantive resources that proclaim the liberating grace of God, enhance faith, and support the people and communities we serve.
       
       p.
-        Our name expresses both our rootedness in the Lutheran tradition and gifts of the Reformation as well as our focus on creating a wide range of media resources for the  church, classroom, and home through the work of our  three publishing units. 
+        Our name expresses our rootedness in the gifts of the Reformation while highlighting the focus of our three publishing units on developing a range of resources for the church, classroom, and home.
 
     .half
       item
-        h2 Augsburg Fortress
+        h2 
+          a(href="//augsburgfortress.org", target="_blank") Augsburg Fortress
         p.
           Serves Lutheran churches with resources  that support worship and music, faith formation, and congregational life.
 
       item
-        h2 Fortress Press
+        h2
+          a(href="//fortresspress.com", target="_blank") Fortress Press
         p.
           Supports higher education faculty, students, clergy, and church leaders across the ecumenical landscape with resources for the classroom, research, and individual study.
 
       item
         h2 Sparkhouse
         p.
-          Sparkhouse Church develops faith formation resources for children, youth, and adults that spark new life in Christian communities. 
+          <a href="//wearesparkhouse.org" target="_blank">Sparkhouse Church</a> develops faith formation resources for children, youth, and adults that spark new life in Christian communities. 
         p.
-          Sparkhouse Family creates entertaining books, Bibles, and videos for today’s Christian families that help parents fit  faith into everyday life. 
+          <a href="//sparkhouse.org" target="_blank">Sparkhouse Family</a> creates entertaining books, Bibles, and videos for today’s Christian families that help parents fit  faith into everyday life. 
   include footer
